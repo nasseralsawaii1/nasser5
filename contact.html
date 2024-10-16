@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - مدرسة سعود بن عزان للتعليم الأساسي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* نوع الخط */
+            direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+            background-color: #f2f2f2; /* لون خلفية الصفحة */
+            margin: 0; /* إزالة الهوامش الافتراضية */
+            padding: 0; /* إزالة الحشوة الافتراضية */
+        }
+
+        header {
+            background-color: #3b5998; /* لون خلفية رأس الصفحة */
+            color: white; /* لون النص في رأس الصفحة */
+            padding: 20px; /* حشوة داخل رأس الصفحة */
+            text-align: center; /* محاذاة النص إلى المنتصف */
+        }
+
+        nav ul {
+            list-style: none; /* إزالة الرموز من قائمة الروابط */
+            padding: 0; /* إزالة الحشوة الافتراضية */
+        }
+
+        nav ul li {
+            display: inline; /* عرض العناصر في نفس السطر */
+            margin: 0 15px; /* مسافة بين العناصر */
+        }
+
+        nav ul li a {
+            color: white; /* لون النص في الروابط */
+            text-decoration: none; /* إزالة الخط السفلي من الروابط */
+            padding: 10px 15px; /* حشوة داخل الأزرار */
+            background-color: #f9c74f; /* لون خلفية الأزرار */
+            border-radius: 5px; /* زوايا دائرية للأزرار */
+            transition: background-color 0.3s; /* تأثير عند تغيير اللون */
+        }
+
+        nav ul li a:hover {
+            background-color: #ffc107; /* لون الزر عند التمرير فوقه */
+        }
+
+        main {
+            padding: 20px; /* حشوة داخل قسم المحتوى الرئيسي */
+        }
+
+        .contact-form {
+            max-width: 600px; /* الحد الأقصى لعرض نموذج الاتصال */
+            margin: auto; /* توسيط النموذج */
+            background-color: white; /* لون خلفية النموذج */
+            padding: 20px; /* حشوة داخل النموذج */
+            border-radius: 10px; /* زوايا دائرية للنموذج */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل للنموذج */
+        }
+
+        .contact-form h2 {
+            text-align: center; /* محاذاة العنوان إلى المنتصف */
+        }
+
+        .contact-form label {
+            display: block; /* جعل العلامات تأخذ سطر كامل */
+            margin: 10px 0 5px; /* مسافة بين العلامات والعناصر */
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%; /* عرض كامل للعناصر */
+            padding: 10px; /* حشوة داخل العناصر */
+            margin: 5px 0 15px; /* مسافة بين العناصر */
+            border: 1px solid #ccc; /* لون حدود العناصر */
+            border-radius: 5px; /* زوايا دائرية للعناصر */
+        }
+
+        .contact-form button {
+            background-color: #3b5998; /* لون خلفية الزر */
+            color: white; /* لون النص في الزر */
+            padding: 10px 20px; /* حشوة داخل الزر */
+            border: none; /* إزالة الحدود */
+            border-radius: 5px; /* زوايا دائرية للزر */
+            cursor: pointer; /* تغيير المؤشر عند التمرير فوق الزر */
+            transition: background-color 0.3s; /* تأثير عند تغيير اللون */
+        }
+
+        .contact-form button:hover {
+            background-color: #555; /* لون الزر عند التمرير فوقه */
+        }
+
+        footer {
+            background-color: #3b5998; /* لون خلفية الفوتر */
+            color: white; /* لون النص في الفوتر */
+            text-align: center; /* محاذاة النص إلى المنتصف */
+            padding: 10px 0; /* حشوة داخل الفوتر */
+            position: relative; /* تعيين موضع النسبي */
+            bottom: 0; /* محاذاة الفوتر إلى الأسفل */
+            width: 100%; /* عرض الفوتر كامل */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مدرسة سعود بن عزان للتعليم الأساسي</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="gallery.html">معرض الصور</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-form">
+            <h2>تواصل معنا</h2>
+            <form>
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>حقوق الطبع والنشر &copy; 2024 مدرسة سعود بن عزان للتعليم الأساسي</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3b5998;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #f9c74f; /* لون زر جذاب */
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #f9844a; /* لون عند التحويم */
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick-links {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+.quick-links p {
+    margin: 10px 0;
+}
+
+.quick-links a {
+    color: #3b5998; /* لون النص */
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline; /* تأثير عند التحويم */
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأخبار - مدرسة سعود بن عزان للتعليم الأساسي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* نوع الخط */
+            direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+            background-color: #f2f2f2; /* لون خلفية الصفحة */
+            margin: 0; /* إزالة الهوامش الافتراضية */
+            padding: 0; /* إزالة الحشوة الافتراضية */
+        }
+
+        header {
+            background-color: #3b5998; /* لون خلفية رأس الصفحة */
+            color: white; /* لون النص في رأس الصفحة */
+            padding: 20px; /* حشوة داخل رأس الصفحة */
+            text-align: center; /* محاذاة النص إلى المنتصف */
+        }
+
+        nav ul {
+            list-style: none; /* إزالة الرموز من قائمة الروابط */
+            padding: 0; /* إزالة الحشوة الافتراضية */
+        }
+
+        nav ul li {
+            display: inline; /* عرض العناصر في نفس السطر */
+            margin: 0 15px; /* مسافة بين العناصر */
+        }
+
+        nav ul li a {
+            color: white; /* لون النص في الروابط */
+            text-decoration: none; /* إزالة الخط السفلي من الروابط */
+            padding: 10px 15px; /* حشوة داخل الأزرار */
+            background-color: #f9c74f; /* لون خلفية الأزرار */
+            border-radius: 5px; /* زوايا دائرية للأزرار */
+            transition: background-color 0.3s; /* تأثير عند تغيير اللون */
+        }
+
+        nav ul li a:hover {
+            background-color: #ffc107; /* لون الزر عند التمرير فوقه */
+        }
+
+        .news-ticker {
+            background-color: #f9c74f; /* لون خلفية الشريط المتحرك */
+            padding: 10px; /* حشوة داخل الشريط */
+            overflow: hidden; /* إخفاء المحتوى الذي يتجاوز الحواف */
+            position: relative; /* تعيين موضع النسبي */
+            text-align: center; /* محاذاة النص إلى المنتصف */
+            white-space: nowrap; /* عدم التفاف النصوص */
+            width: 100%; /* عرض الشريط */
+            height: 30px; /* ارتفاع الشريط */
+        }
+
+        .news-ticker-content {
+            position: absolute; /* تعيين الموضع المطلق */
+            animation: ticker 15s linear infinite; /* تأثير الحركة المستمرة */
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(100%); } /* بداية الحركة */
+            100% { transform: translateX(-100%); } /* نهاية الحركة */
+        }
+
+        .news-content {
+            padding: 20px; /* حشوة داخل محتوى الأخبار */
+            text-align: right; /* محاذاة النصوص إلى اليمين */
+        }
+
+        .news-content article {
+            margin-bottom: 20px; /* مسافة بين المقالات */
+        }
+
+        footer {
+            background-color: #3b5998; /* لون خلفية الفوتر */
+            color: white; /* لون النص في الفوتر */
+            text-align: center; /* محاذاة النص إلى المنتصف */
+            padding: 10px 0; /* حشوة داخل الفوتر */
+            position: relative; /* تعيين موضع النسبي */
+            bottom: 0; /* محاذاة الفوتر إلى الأسفل */
+            width: 100%; /* عرض الفوتر كامل */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مدرسة سعود بن عزان للتعليم الأساسي</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="gallery.html">معرض الصور</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="news-ticker">
+            <div class="news-ticker-content">
+                <span>خبر 1: تم تنظيم فعالية جديدة في المدرسة.</span>
+                <span> | </span>
+                <span>خبر 2: تم تكريم الطلاب المتفوقين في الفصل الدراسي.</span>
+                <span> | </span>
+                <span>خبر 3: فتح باب التسجيل للعام الدراسي القادم.</span>
+            </div>
+        </section>
+
+        <section class="news-content">
+            <h2>الأخبار</h2>
+            <article>
+                <h3>خبر 1</h3>
+                <p>تم تنظيم فعالية جديدة في المدرسة لتعزيز مهارات الطلاب.</p>
+            </article>
+            <article>
+                <h3>خبر 2</h3>
+                <p>تم تكريم الطلاب المتفوقين في الفصل الدراسي في حفل خاص.</p>
+            </article>
+            <article>
+                <h3>خبر 3</h3>
+                <p>فتح باب التسجيل للعام الدراسي القادم، يرجى متابعة الموقع لمزيد من التفاصيل.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>حقوق الطبع والنشر &copy; 2024 مدرسة سعود بن عزان للتعليم الأساسي</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصور - مدرسة سعود بن عزان للتعليم الأساسي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* نوع الخط */
+            direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+            background-color: #f2f2f2; /* لون خلفية الصفحة */
+            margin: 0; /* إزالة الهوامش الافتراضية */
+            padding: 0; /* إزالة الحشوة الافتراضية */
+        }
+
+        header {
+            background-color: #3b5998; /* لون خلفية رأس الصفحة */
+            color: white; /* لون النص في رأس الصفحة */
+            padding: 20px; /* حشوة داخل رأس الصفحة */
+            text-align: center; /* محاذاة النص إلى المنتصف */
+        }
+
+        nav ul {
+            list-style: none; /* إزالة الرموز من قائمة الروابط */
+            padding: 0; /* إزالة الحشوة الافتراضية */
+        }
+
+        nav ul li {
+            display: inline; /* عرض العناصر في نفس السطر */
+            margin: 0 15px; /* مسافة بين العناصر */
+        }
+
+        nav ul li a {
+            color: white; /* لون النص في الروابط */
+            text-decoration: none; /* إزالة الخط السفلي من الروابط */
+            padding: 10px 15px; /* حشوة داخل الأزرار */
+            background-color: #f9c74f; /* لون خلفية الأزرار */
+            border-radius: 5px; /* زوايا دائرية للأزرار */
+            transition: background-color 0.3s; /* تأثير عند تغيير اللون */
+        }
+
+        nav ul li a:hover {
+            background-color: #ffc107; /* لون الزر عند التمرير فوقه */
+        }
+
+        .gallery {
+            display: flex; /* استخدام flexbox لتنسيق الصور */
+            flex-wrap: wrap; /* السماح بتغليف الصور */
+            justify-content: center; /* محاذاة الصور إلى المنتصف */
+            padding: 20px; /* حشوة داخل قسم المعرض */
+        }
+
+        .gallery img {
+            width: 300px; /* عرض الصور */
+            height: 200px; /* ارتفاع الصور */
+            margin: 10px; /* مسافة بين الصور */
+            border-radius: 10px; /* زوايا دائرية للصور */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل للصورة */
+            transition: transform 0.3s; /* تأثير عند تغيير الحجم */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* تكبير الصورة عند التمرير فوقها */
+        }
+
+        footer {
+            background-color: #3b5998; /* لون خلفية الفوتر */
+            color: white; /* لون النص في الفوتر */
+            text-align: center; /* محاذاة النص إلى المنتصف */
+            padding: 10px 0; /* حشوة داخل الفوتر */
+            position: relative; /* تعيين موضع النسبي */
+            bottom: 0; /* محاذاة الفوتر إلى الأسفل */
+            width: 100%; /* عرض الفوتر كامل */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مدرسة سعود بن عزان للتعليم الأساسي</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="gallery.html">معرض الصور</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="text-align: center;">معرض الصور</h2>
+        <section class="gallery">
+            <img src="image1.jpg" alt="صورة 1"> <!-- استبدل باسم الصورة الفعلي -->
+            <img src="image2.jpg" alt="صورة 2"> <!-- استبدل باسم الصورة الفعلي -->
+            <img src="image3.jpg" alt="صورة 3"> <!-- استبدل باسم الصورة الفعلي -->
+            <img src="image4.jpg" alt="صورة 4"> <!-- استبدل باسم الصورة الفعلي -->
+            <img src="image5.jpg" alt="صورة 5"> <!-- استبدل باسم الصورة الفعلي -->
+            <img src="image6.jpg" alt="صورة 6"> <!-- استبدل باسم الصورة الفعلي -->
+        </section>
+    </main>
+
+    <footer>
+        <p>حقوق الطبع والنشر &copy; 2024 مدرسة سعود بن عزان للتعليم الأساسي</p>
+    </footer>
+</body>
+</html>
